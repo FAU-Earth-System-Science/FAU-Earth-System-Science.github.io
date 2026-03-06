@@ -1,10 +1,6 @@
 ---
-title: ""
+title: "Earth System Research and Training at FAU"
 ---
-
-\
-
-# Earth System Research and Training at FAU
 
 ```{r, echo=FALSE, out.width="30%",  out.extra='style="float:right; padding:30px"'}
 knitr::include_graphics("logo.png")
@@ -24,10 +20,11 @@ At the Department of Geography and Geosciences at FAU and the Bayreuth Centre fo
 
 More information about available positions can be found [here](jobs.html).
 
-```{r, echo=FALSE, out.width="20%",  out.extra='style="float:left; padding:30px"'}
-knitr::include_graphics("elitenetwork.png")
-knitr::include_graphics("unibayreuth.svg")
-knitr::include_graphics("FAU_noborder.svg")
-```
+<div style="display: flex; justify-content: center; align-items: center; vertical-align: middle; gap: 0px 100px; flex-wrap: wrap;">
+  <img src="FAU_noborder.svg" style="height: 52px; width: auto; padding-right: 36px;">
+  <img src="unibayreuth.svg" style="height: 50px; width: auto;">
+  <img src="elitenetwork.png" style="height: 60px; width: auto;">
+</div>
+
 
 
