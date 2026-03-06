@@ -36,6 +36,21 @@ details.expandable[open] summary {
   margin-bottom: 0.5em;
 }
 
+details summary {
+  list-style: none;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details summary::before {
+  content: '+ ';
+  color: #89B542;
+  font-weight: bold;
+}
+details[open] summary::before {
+  content: '− ';
+}
+
 a {
   color: #2e7d32;
 }
