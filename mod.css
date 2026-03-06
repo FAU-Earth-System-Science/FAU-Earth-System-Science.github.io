@@ -1,0 +1,49 @@
+.navbar {
+  border-bottom: 10px solid #89B542;
+}
+
+.tocify .active {
+  background-color: #89B542;
+}
+
+.tocify a:hover {
+  color: #89B542;
+}
+
+/* Ensure active link does not change on hover */
+.tocify .active:hover {
+  background-color: #89B542 !important;
+  color: white !important;
+}
+
+details.expandable {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  background: #F0F5E8;
+}
+
+details.expandable summary {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.3em 0;
+  color: #333;
+}
+
+details.expandable[open] summary {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #2e7d32;
+}
+
+a:hover {
+  color: #1b5e20;
+}
+
+body {
+  color: #000000;
+}

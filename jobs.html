@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>jobs.knit</title>
+
+<script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="mod.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">About this project</a>
+</li>
+<li>
+  <a href="jobs.html">Jobs</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<p><br />
+</p>
+<div id="available-positions" class="section level1">
+<h1>Available positions</h1>
+<p>Jump to <a href="#application-guidelines">Application
+guidelines</a>.</p>
+<details class="expandable">
+<summary>
+Project 1: Atmospheric modeling: from paleoclimates to modern climates
+</summary>
+<p><strong>Research</strong>: <em>Regional atmospheric modeling from
+paleoclimates to modern climates</em><br />
+The research focus in this project will be on regional, high-resolution
+climate modeling. The objective will be to extend approaches for the
+most recent decades (e.g., WRF model driven with reanalysis data) to the
+paleoclimate perspective. By bridging between both time scales,
+atmospheric model improvement on the one side, and a better
+interpretation of climate proxies on the other (e.g., tree rings, marine
+organisms, soils), should be the major motivation. Also, implementation
+of specific atmospheric processes into the models through recent AI
+algorithms will be explored in the model development space.<br />
+<strong>Teaching</strong>: The candidate will be responsible for
+teaching atmosphere-based courses like climate data analysis, the
+atmosphere in a paleoclimate context, and climate modeling. Classic
+seminars on atmospheric science topics are also possible.<br />
+<strong>Contact</strong>: Thomas Mölg (<a
+href="mailto:thomas.moelg@fau.de"
+class="email">thomas.moelg@fau.de</a>)</p>
+<p><span style="font-size: 1.2em;">Click <strong><a
+href="pdfs/ESDE_project1.pdf">here</a></strong> for further details
+about this project.</span></p>
+</details>
+<details class="expandable">
+<summary>
+Project 2: Climate-driven plant extinctions
+</summary>
+<p><strong>This position is based at the University of Bayreuth
+(UBT).</strong></p>
+<p><strong>Research</strong>: <em>Quantifying climate-driven extinction
+risk in plants across time and space</em><br />
+This project aims to understand climate-driven plant extinctions in the
+fossil record. We seek to identify the mechanisms shaping extinction
+risk across space and time, focusing on range dynamics, environmental
+change, and the temporal structure of climatic stressors. By integrating
+fossil plant occurrences with trait data and paleoenvironmental
+reconstructions, the project will quantify how functional traits,
+spatial distributions, and rates of climatic change interact to shape
+extinction selectivity through time. We will develop a rigorous
+quantitative framework linking spatiotemporal fossil patterns to
+trait-based and environmental predictors while explicitly addressing
+dating uncertainty, taxonomic harmonization, and heterogeneous sampling.
+The position will be based within a vibrant, internationally visible
+research environment of the BayCEER at the University of Bayreuth,
+closely connected to cutting-edge research in biogeography and ecosystem
+modeling, and collaborate with researchers from University of Erlangen.
+We seek an ambitious quantitative paleontologist, or an ecologist ready
+to work with fossils, to advance integrative, high-impact research at
+the ecology-paleontology interface.<br />
+<strong>Teaching</strong>: The candidate will contribute to teaching in
+paleobiology and deep-time ecology and to developing a module on
+Ecological Niche Modeling tailored to paleontological applications.
+Depending on expertise and interests, the candidate is also expected to
+support instruction in statistics, programming, and foundational
+ecology. The teaching load is up to 5 SWS (Semesterwochenstunden),
+corresponding to approximately 3-4 contact hours per week during the
+semester. Contributions to broader program activities, such as
+curriculum development, student mentoring, and collaborative teaching
+initiatives, are encouraged and will be aligned with career stage. The
+candidate will be based in Bayreuth, but must be willing to travel to
+Erlangen on a regular basis.  <strong>Contact</strong>: Lisa Hülsmann
+(<a href="mailto:lisa.huelsmann@uni-bayreuth.de"
+class="email">lisa.huelsmann@uni-bayreuth.de</a>) and Manuel Steinbauer
+(<a href="mailto:manuel.steinbauer@uni-bayreuth.de"
+class="email">manuel.steinbauer@uni-bayreuth.de</a>).</p>
+<p><span style="font-size: 1.2em;">Click <strong><a
+href="pdfs/ESDE_project2.pdf">here</a></strong> for further details
+about this project.</span></p>
+</details>
+<details class="expandable">
+<summary>
+Project 3: Geochemical flux exchange between crust and oceans
+</summary>
+<p><strong>Research</strong>: <em>Quantification of the geochemical flux
+exchange between crust and oceans in island arc settings</em><br />
+This project will develop an integrated framework to quantify elemental
+fluxes associated with seawater interaction in heterogeneous oceanic
+crust at submarine island arcs. Chemical exchange during mineral
+dissolution and secondary phase formation exerts a key control on ocean
+chemistry, yet most existing studies focus on mafic crust, despite the
+compositional variability from felsic to mafic rocks in arc settings.
+These environments commonly host hydrothermal systems driven by shallow
+magmatic activity, which further modify crustal composition and fluid
+chemistry. We will investigate fluxes of major elements abundant in
+felsic rocks and seawater, including Si, Mg, Ca, C, and S, by combining
+elemental concentrations and stable isotope data from altered and
+unaltered rocks with reaction path and transport modelling. This
+approach will enable quantification of elemental sources, sinks, and
+pathways within the ocean-crust system.<br />
+<strong>Teaching</strong>: The candidate will be responsible for
+supporting training in geochemistry, geochemical modelling, and
+laboratory and field courses, as well as contributing to the development
+of a new module in fluid transport modelling techniques. 
+<strong>Contact</strong>: Barbara Kleine-Marshall (<a
+href="mailto:barbara.kleine-marshall@fau.de"
+class="email">barbara.kleine-marshall@fau.de</a>).</p>
+<p><span style="font-size: 1.2em;">Click <strong><a
+href="pdfs/ESDE_project3.pdf">here</a></strong> for further details
+about this project.</span></p>
+</details>
+<details class="expandable">
+<summary>
+Project 4: Modelling alpine hydrology under climate change
+</summary>
+<p><strong>Research</strong>: <em>Investigating changes in Alpine
+hydrology and their impact on Earth System spheres using a distributed,
+physically-based hydrological modelling approach</em><br />
+This project aims to develop novel modelling approaches that integrate
+hydrological shifts observed in the Alpine hydrosphere with changes in
+the atmosphere, cryosphere, geosphere, and biosphere. Building upon
+results from the SEHAG research unit (<a
+href="https://sehag.ku.de/en/welcome/"
+class="uri">https://sehag.ku.de/en/welcome/</a>), we will investigate
+evidence of the coupled and intertwined responses of Alpine geosystems
+to climate change. Since the uncertainties inherent in cascaded
+modelling pose significant challenges for interdisciplinary integration,
+we will apply advanced model reduction techniques and surrogate models
+to accelerate Bayesian parameter inference, enabling the identification
+of key transitions within Earth systems, specifically focusing on Alpine
+catchments.<br />
+<strong>Teaching</strong>: The candidate will be responsible for
+supporting training in hydrological and hydrogeological modelling, water
+quality, and the development of a new module in Soil Science focusing on
+the critical zone.  <strong>Contact</strong>: Gabriele Chiogna (<a
+href="mailto:gabriele.chiogna@fau.de"
+class="email">gabriele.chiogna@fau.de</a>).</p>
+<p><span style="font-size: 1.2em;">Click <strong><a
+href="pdfs/ESDE_project4.pdf">here</a></strong> for further details
+about this project.</span></p>
+</details>
+<details class="expandable">
+<summary>
+Project 5: Phylogenetics and Earth system change
+</summary>
+<p><strong>Research</strong>: <em>Integrating life and Earth system data
+through Bayesian phylogenetics</em><br />
+This project will develop approaches to combining evidence across life
+and Earth systems using statistical phylogenetics as a framework.
+Evidence of long-term evolutionary processes can come from molecular
+sequence data, morphology, or fossil occurrences. Meanwhile, evidence of
+other Earth system processes can come from paleoclimate reconstructions
+or geochemical proxies. The uncertainties associated with divergent data
+sources are complex and pose challenges for their integration. We will
+apply new Bayesian phylodynamic models and explore strategies for
+propagating uncertainties across spheres, with a view to identifying key
+transitions in Earth systems through empirical case studies.<br />
+<strong>Teaching</strong>: The candidate will be responsible for
+supporting training in statistics, programming, and the development of a
+new module in Earth Systems Data Science, together with the Department
+of Data Science at FAU.  <strong>Contact</strong>: Rachel Warnock (<a
+href="mailto:rachel.warnock@fau.de"
+class="email">rachel.warnock@fau.de</a>).</p>
+<p><span style="font-size: 1.2em;">Click <strong><a
+href="pdfs/ESDE_project5.pdf">here</a></strong> for further details
+about this project.</span></p>
+</details>
+<details class="expandable">
+<summary>
+Project 6: Science diplomacy for Earth system science
+</summary>
+<p><strong>Research</strong>: <em>Training the next generation of Earth
+system scientists for global collaboration</em><br />
+This project will develop a research agenda that conceptualizes science
+diplomacy as a core competency of Earth system science. The project
+should investigate how scientific knowledge related to different Earth
+system spheres circulates across national, institutional, and cultural
+boundaries and how international cooperation shapes responses to global
+environmental challenges and is shaped by them. Particular attention
+should be given to <em>Africa–Europe collaborations</em>, including
+questions of equitable partnership, capacity strengthening, data access,
+and co-production of knowledge in areas such as climate adaptation,
+environmental monitoring, land-use change, animal tracking, or
+transboundary resource management. The aim is to explore how scientific
+collaboration can address geopolitical tensions and build trust across
+both national and disciplinary borders.<br />
+<strong>Teaching</strong>: The candidate will be responsible for
+supporting training in science diplomacy, science communication and
+Science and Technology Studies and the development of the Science
+Diplomacy Lab located at the Chair of Science, Technology and Gender
+Studies at FAU. The Science Diplomacy Lab is an initiative in the making
+that aims to serve as a platform for training, research, and
+international engagement, linking Earth system science with diplomacy,
+policy processes, and equitable global partnerships. 
+<strong>Contact</strong>: Contact: Maria Rentetzi (<a
+href="mailto:maria.rentetzi@fau.de"
+class="email">maria.rentetzi@fau.de</a>).</p>
+<p><span style="font-size: 1.2em;">Click <strong><a
+href="pdfs/ESDE_project6.pdf">here</a></strong> for further details
+about this project.</span></p>
+</details>
+<details class="expandable">
+<summary>
+Program Coordinator
+</summary>
+<p><strong>Role description</strong>: We are seeking a Program
+Coordinator to lead administrative and student support aspects of the
+MSc program. The applicant will be responsible for managing the project
+budget, supporting the student admissions process, and providing
+students with administrative support. This position is 50% E13.
+<strong>Contact</strong>: Rachel Warnock (<a
+href="mailto:rachel.warnock@fau.de"
+class="email">rachel.warnock@fau.de</a>, program speaker) and Barbara
+Kleine-Marshall (<a href="mailto:barbara.kleine-marshall@fau.de"
+class="email">barbara.kleine-marshall@fau.de</a>, program
+co-speaker).</p>
+<p><span style="font-size: 1.2em;">Click <strong><a
+href="pdfs/ESDE_Program_coordinator.pdf">here</a></strong> for further
+details about this project.</span></p>
+</details>
+<p><br />
+</p>
+</div>
+<div id="application-guidelines" class="section level1">
+<h1>Application guidelines</h1>
+<p>For your application, please send a single PDF to <a
+href="mailto:es-master@fau.de" class="email">es-master@fau.de</a>. The
+subject of the email should refer to the individual project/position you
+are applying for.</p>
+<p>For <strong>post docs</strong>, the PDF should comprise:</p>
+<ul>
+<li>Cover letter (indicating which project/position you are applying
+for, and stating your background and motivation for the project) (max. 1
+page)</li>
+<li>CV, including a list of relevant publications (max. 3 pages)</li>
+<li>A short research and teaching concept (max. 2 pages)</li>
+<li>University degree certificates</li>
+<li>Contact details for two potential references</li>
+</ul>
+<p>For the <strong>program coordinator</strong>, the PDF should
+comprise:</p>
+<ul>
+<li>Cover letter, outlining previous experience and approaches used
+previously when managing projects and people, along with your motivation
+to become the program coordinator (max. 2 pages)</li>
+<li>CV (max. 3 pages)</li>
+<li>University degree certificates</li>
+<li>Contact details for two potential references</li>
+</ul>
+<p><strong>Deadline for applications: 09.04.26.</strong></p>
+<p>We welcome applications from people regardless of their gender,
+nationality, ethnic or social background, religion, age, disability,
+sexual orientation, and other identities. Friedrich-Alexander University
+of Erlangen-Nuremberg (FAU) is actively seeking to increase the
+representation of women in research and teaching and therefore strongly
+encourages women to apply for these positions.</p>
+<p>For general enquiries contact <a href="mailto:es-master@fau.de"
+class="email">es-master@fau.de</a>.</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
