@@ -23,7 +23,7 @@ The research focus in this project will be on regional, high-resolution climate 
   
 **Research**: *Quantifying climate-driven extinction risk in plants across time and space*\
 This project aims to understand climate-driven plant extinctions in the fossil record. We seek to identify the mechanisms shaping extinction risk across space and time, focusing on range dynamics, environmental change, and the temporal structure of climatic stressors. By integrating fossil plant occurrences with trait data and paleoenvironmental reconstructions, the project will quantify how functional traits, spatial distributions, and rates of climatic change interact to shape extinction selectivity through time. We will develop a rigorous quantitative framework linking spatiotemporal fossil patterns to trait-based and environmental predictors while explicitly addressing dating uncertainty, taxonomic harmonization, and heterogeneous sampling. The position will be based within a vibrant, internationally visible research environment of the BayCEER at the University of Bayreuth, closely connected to cutting-edge research in biogeography and ecosystem modeling, and collaborate with researchers from University of Erlangen. We seek an ambitious quantitative paleontologist, or an ecologist ready to work with fossils, to advance integrative, high-impact research at the ecology-paleontology interface.\
-**Teaching**: The candidate will contribute to teaching in paleobiology and deep-time ecology and to developing a module on Ecological Niche Modeling tailored to paleontological applications. Depending on expertise and interests, the candidate is also expected to support instruction in statistics, programming, and foundational ecology. The teaching load is up to 5 SWS (Semesterwochenstunden), corresponding to approximately 3-4 contact hours per week during the semester. Contributions to broader program activities, such as curriculum development, student mentoring, and collaborative teaching initiatives, are encouraged and will be aligned with career stage. The candidate will be based in Bayreuth, but must be willing to travel to Erlangen on a regular basis.\ 
+**Teaching**: The candidate will contribute to teaching in paleobiology and deep-time ecology and to developing a module on Ecological Niche Modeling tailored to paleontological applications. Depending on expertise and interests, the candidate is also expected to support instruction in statistics, programming, and foundational ecology. The teaching load is up to 5 SWS (Semesterwochenstunden), corresponding to approximately 3-4 contact hours per week during the semester. Contributions to broader program activities, such as curriculum development, student mentoring, and collaborative teaching initiatives, are encouraged and will be aligned with career stage. The candidate will be based in Bayreuth, but must be willing to travel to Erlangen on a regular basis.\
 **Contact**: Lisa Hülsmann (lisa.huelsmann@uni-bayreuth.de) and Manuel Steinbauer (manuel.steinbauer@uni-bayreuth.de).
   
 <span style="font-size: 1.2em;">Click **[here](pdfs/ESDE_project2.pdf)** for further details about this project.</span>  
@@ -35,7 +35,7 @@ This project aims to understand climate-driven plant extinctions in the fossil r
   
 **Research**: *Quantification of the geochemical flux exchange between crust and oceans in island arc settings*\
 This project will develop an integrated framework to quantify elemental fluxes associated with seawater interaction in heterogeneous oceanic crust at submarine island arcs. Chemical exchange during mineral dissolution and secondary phase formation exerts a key control on ocean chemistry, yet most existing studies focus on mafic crust, despite the compositional variability from felsic to mafic rocks in arc settings. These environments commonly host hydrothermal systems driven by shallow magmatic activity, which further modify crustal composition and fluid chemistry. We will investigate fluxes of major elements abundant in felsic rocks and seawater, including Si, Mg, Ca, C, and S, by combining elemental concentrations and stable isotope data from altered and unaltered rocks with reaction path and transport modelling. This approach will enable quantification of elemental sources, sinks, and pathways within the ocean-crust system.\
-**Teaching**: The candidate will be responsible for supporting training in geochemistry, geochemical modelling, and laboratory and field courses, as well as contributing to the development of a new module in fluid transport modelling techniques.\ 
+**Teaching**: The candidate will be responsible for supporting training in geochemistry, geochemical modelling, and laboratory and field courses, as well as contributing to the development of a new module in fluid transport modelling techniques.\
 **Contact**: Barbara Kleine-Marshall (barbara.kleine-marshall@fau.de).
   
 <span style="font-size: 1.2em;">Click **[here](pdfs/ESDE_project3.pdf)** for further details about this project.</span>    
@@ -47,7 +47,7 @@ This project will develop an integrated framework to quantify elemental fluxes a
   
 **Research**: *Investigating changes in Alpine hydrology and their impact on Earth System spheres using a distributed, physically-based hydrological modelling approach*\
 This project aims to develop novel modelling approaches that integrate hydrological shifts observed in the Alpine hydrosphere with changes in the atmosphere, cryosphere, geosphere, and biosphere. Building upon results from the SEHAG research unit (https://sehag.ku.de/en/welcome/), we will investigate evidence of the coupled and intertwined responses of Alpine geosystems to climate change. Since the uncertainties inherent in cascaded modelling pose significant challenges for interdisciplinary integration, we will apply advanced model reduction techniques and surrogate models to accelerate Bayesian parameter inference, enabling the identification of key transitions within Earth systems, specifically focusing on Alpine catchments.\
-**Teaching**: The candidate will be responsible for supporting training in hydrological and hydrogeological modelling, water quality, and the development of a new module in Soil Science focusing on the critical zone.\ 
+**Teaching**: The candidate will be responsible for supporting training in hydrological and hydrogeological modelling, water quality, and the development of a new module in Soil Science focusing on the critical zone.\
 **Contact**: Gabriele Chiogna (gabriele.chiogna@fau.de).
 
 <span style="font-size: 1.2em;">Click **[here](pdfs/ESDE_project4.pdf)** for further details about this project.</span>   
@@ -59,7 +59,7 @@ This project aims to develop novel modelling approaches that integrate hydrologi
   
 **Research**: *Integrating life and Earth system data through Bayesian phylogenetics*\
 This project will develop approaches to combining evidence across life and Earth systems using statistical phylogenetics as a framework. Evidence of long-term evolutionary processes can come from molecular sequence data, morphology, or fossil occurrences. Meanwhile, evidence of other Earth system processes can come from paleoclimate reconstructions or geochemical proxies. The uncertainties associated with divergent data sources are complex and pose challenges for their integration. We will apply new Bayesian phylodynamic models and explore strategies for propagating uncertainties across spheres, with a view to identifying key transitions in Earth systems through empirical case studies.\
-**Teaching**: The candidate will be responsible for supporting training in statistics, programming, and the development of a new module in Earth Systems Data Science, together with the Department of Data Science at FAU.\ 
+**Teaching**: The candidate will be responsible for supporting training in statistics, programming, and the development of a new module in Earth Systems Data Science, together with the Department of Data Science at FAU.\
 **Contact**: Rachel Warnock (rachel.warnock@fau.de).
   
 <span style="font-size: 1.2em;">Click **[here](pdfs/ESDE_project5.pdf)** for further details about this project.</span>    
@@ -71,7 +71,7 @@ This project will develop approaches to combining evidence across life and Earth
   
 **Research**: *Training the next generation of Earth system scientists for global collaboration*\
 This project will develop a research agenda that conceptualizes science diplomacy as a core competency of Earth system science. The project should investigate how scientific knowledge related to different Earth system spheres circulates across national, institutional, and cultural boundaries and how international cooperation shapes responses to global environmental challenges and is shaped by them. Particular attention should be given to *Africa–Europe collaborations*, including questions of equitable partnership, capacity strengthening, data access, and co-production of knowledge in areas such as climate adaptation, environmental monitoring, land-use change, animal tracking, or transboundary resource management. The aim is to explore how scientific collaboration can address geopolitical tensions and build trust across both national and disciplinary borders.\
-**Teaching**: The candidate will be responsible for supporting training in science diplomacy, science communication and Science and Technology Studies and the development of the Science Diplomacy Lab located at the Chair of Science, Technology and Gender Studies at FAU. The Science Diplomacy Lab is an initiative in the making that aims to serve as a platform for training, research, and international engagement, linking Earth system science with diplomacy, policy processes, and equitable global partnerships.\ 
+**Teaching**: The candidate will be responsible for supporting training in science diplomacy, science communication and Science and Technology Studies and the development of the Science Diplomacy Lab located at the Chair of Science, Technology and Gender Studies at FAU. The Science Diplomacy Lab is an initiative in the making that aims to serve as a platform for training, research, and international engagement, linking Earth system science with diplomacy, policy processes, and equitable global partnerships.\
 **Contact**: Contact: Maria Rentetzi (maria.rentetzi@fau.de).
 
 <span style="font-size: 1.2em;">Click **[here](pdfs/ESDE_project6.pdf)** for further details about this project.</span>  
@@ -81,10 +81,10 @@ This project will develop a research agenda that conceptualizes science diplomac
 <details class="expandable">
   <summary>Program Coordinator</summary>
   
-**Role description**: We are seeking a Program Coordinator to lead administrative and student support aspects of the MSc program. The applicant will be responsible for managing the project budget, supporting the student admissions process, and providing students with administrative support. This position is 50% E13.
+**Role description**: We are seeking a Program Coordinator to lead administrative and student support aspects of the MSc program. The applicant will be responsible for managing the project budget, supporting the student admissions process, and providing students with administrative support. This position is 50% E13.\
 **Contact**: Rachel Warnock (rachel.warnock@fau.de, program speaker) and Barbara Kleine-Marshall (barbara.kleine-marshall@fau.de, program co-speaker).  
 
-<span style="font-size: 1.2em;">Click **[here](pdfs/ESDE_Program_coordinator.pdf)** for further details about this project.</span>  
+<span style="font-size: 1.2em;">Click **[here](pdfs/ESDE_Program_coordinator.pdf)** for further details about this position.</span>  
   
 </details>
 
@@ -92,7 +92,7 @@ This project will develop a research agenda that conceptualizes science diplomac
 
 # Application guidelines
 
-For your application, please send a single PDF to es-master@fau.de. The subject of the email should refer to the individual project/position you are applying for. 
+For your application, please send a single PDF to es-master@fau.de. The subject of the email should refer to the individual project/position you are applying to. 
 
 For **post docs**, the PDF should comprise: 
 
@@ -109,9 +109,8 @@ For the **program coordinator**, the PDF should comprise:
 * University degree certificates
 * Contact details for two potential references
 
-**Deadline for applications: 09.04.26.**
+**Deadline for applications: 09.04.26.** Interviews will take place soon after this via Zoom.
 
 We welcome applications from people regardless of their gender, nationality, ethnic or social background, religion, age, disability, sexual orientation, and other identities. Friedrich-Alexander University of Erlangen-Nuremberg (FAU) is actively seeking to increase the representation of women in research and teaching and therefore strongly encourages women to apply for these positions.
 
 For general enquiries contact es-master@fau.de. 
-
