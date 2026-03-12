@@ -2,7 +2,7 @@
 title: "Available positions"
 ---
 
-Jump to [Application guidelines](#application-guidelines).
+Jump to [Application guidelines](#application-guidelines). Please read these carefully.
 
 <details class="expandable">
   <summary>Project 1: Atmospheric modeling: from paleoclimates to modern climates</summary>
@@ -98,7 +98,7 @@ For **post docs**, the PDF should comprise:
 
 * Cover letter (indicating which project/position you are applying for, and stating your background and motivation for the project) (max. 1 page)
 * CV, including a list of relevant publications (max. 3 pages)
-* A short research and teaching concept (max. 2 pages)
+* <u>A short research and teaching concept (max. 2 pages)</u>
 * University degree certificates
 * Contact details for two potential references
 
