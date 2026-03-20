@@ -18,6 +18,7 @@ We are seeking **six post docs for up to five years each** to support this initi
 
 At the Department of Geography and Geosciences at FAU and the Bayreuth Centre for Ecology and Environmental Research (BayCEER) **climate research** is a key focal point. Our work encompasses a broad spectrum: from reconstructing geochemical cycles and characterising biodiversity crises in deep time, to studying water and weather systems over recent decades, to future projections, with remote sensing, climate modeling, and biodiversity modeling. The **Science Diplomacy Lab** at FAU is a new initiative that aims to support training and research linking **Earth system science** to **science policy** and **diplomacy**. 
 
+<span style="font-size: 1.2em;">Click **[here](https://earthsystem-master.nat.fau.eu)** to find out more about Masters program.</span>\
 <span style="font-size: 1.2em;">Click **[here](jobs.html)** to find out more about available positions.</span>  
 
 <div style="display: flex; justify-content: center; align-items: center; vertical-align: middle; gap: 0px 100px; flex-wrap: wrap;">
